@@ -1,0 +1,45 @@
+{
+ "name": "The Bitbrain Open Access Sleep (BOAS) dataset",
+ "doi": "doi:10.18112/openneuro.ds005555.v1.1.3",
+ "license": "CC0",
+ "authors": [
+  "Eduardo L\u00f3pez-Larraz",
+  "Mar\u00eda Sierra-Torralba",
+  "Sergio Clemente",
+  "Galit Fierro",
+  "David Oriol",
+  "Javier Minguez",
+  "Luis Montesano",
+  "Jens G. Klinzing"
+ ],
+ "n_nights": 128,
+ "n_people": 100,
+ "n_nights_age_unknown": 1,
+ "n_people_age_unknown": 1,
+ "age_people_min_median_max": [
+  18.0,
+  31.0,
+  82.0
+ ],
+ "age_nights_min_median_max": [
+  18.0,
+  33.0,
+  82.0
+ ],
+ "sex_nights": {
+  "F": 76,
+  "M": 52
+ },
+ "sex_people": {
+  "F": 60,
+  "M": 40
+ },
+ "epoch_seconds": 30.0,
+ "readme_reported": {
+  "inter_scorer_agreement_pct": 82.0,
+  "human_vs_psg_ai_match_pct": 87.13,
+  "human_vs_headband_ai_match_pct": 86.71,
+  "model_paper_doi": "10.1016/j.compbiomed.2026.111560",
+  "states_cross_validation": true
+ }
+}

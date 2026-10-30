@@ -1,0 +1,222 @@
+{
+ "order_assumption": "a person's nights are ordered by the number in sub-N (no dates in the label files)",
+ "note": "exploratory; p-values are for orientation only",
+ "a_person_or_night": {
+  "n_people": 20,
+  "n_nights": 48,
+  "people_by_number_of_nights": {
+   "2": 12,
+   "3": 8
+  },
+  "icc1_dropout_share": 0.202496,
+  "icc1_95_interval": [
+   -0.011495,
+   0.625512
+  ],
+  "icc1_disagreement_rate": 0.35639,
+  "spearman_pairs_dropout_share": {
+   "n": 36,
+   "rho": -0.010423,
+   "p": 0.951891
+  },
+  "high_dropout_nights": [
+   {
+    "night": "sub-1",
+    "pid": "89",
+    "dropout_share": 0.7407,
+    "other_nights": {
+     "sub-2": 0.007667
+    }
+   },
+   {
+    "night": "sub-13",
+    "pid": "91",
+    "dropout_share": 0.545637,
+    "other_nights": {
+     "sub-10": 0.0
+    }
+   },
+   {
+    "night": "sub-57",
+    "pid": "77",
+    "dropout_share": 0.437016,
+    "other_nights": {
+     "sub-55": 0.190121
+    }
+   },
+   {
+    "night": "sub-61",
+    "pid": "79",
+    "dropout_share": 0.280591,
+    "other_nights": {
+     "sub-59": 0.061836
+    }
+   },
+   {
+    "night": "sub-77",
+    "pid": "42",
+    "dropout_share": 0.245826,
+    "other_nights": {}
+   }
+  ]
+ },
+ "b_first_vs_later": {
+  "disagreement_rate": {
+   "n_people": 20,
+   "difference": {
+    "n_defined": 20,
+    "n_undefined": 0,
+    "median": -0.01912,
+    "q25": -0.062474,
+    "q75": 0.01936
+   },
+   "n_later_higher": 8,
+   "n_later_lower": 12,
+   "n_same": 0,
+   "wilcoxon_p": 0.294252
+  },
+  "dropout_share": {
+   "n_people": 20,
+   "difference": {
+    "n_defined": 20,
+    "n_undefined": 0,
+    "median": 0.003793,
+    "q25": -0.000649,
+    "q75": 0.032431
+   },
+   "n_later_higher": 13,
+   "n_later_lower": 6,
+   "n_same": 1,
+   "wilcoxon_p": 0.116544
+  },
+  "hum_sleep_efficiency": {
+   "n_people": 20,
+   "difference": {
+    "n_defined": 20,
+    "n_undefined": 0,
+    "median": 0.527943,
+    "q25": -2.319328,
+    "q75": 8.484034
+   },
+   "n_later_higher": 10,
+   "n_later_lower": 10,
+   "n_same": 0,
+   "wilcoxon_p": 0.409098
+  },
+  "hum_sol": {
+   "n_people": 19,
+   "difference": {
+    "n_defined": 19,
+    "n_undefined": 0,
+    "median": -5.75,
+    "q25": -11.5,
+    "q75": 13.5
+   },
+   "n_later_higher": 7,
+   "n_later_lower": 12,
+   "n_same": 0,
+   "wilcoxon_p": 0.828785
+  },
+  "hum_waso": {
+   "n_people": 20,
+   "difference": {
+    "n_defined": 20,
+    "n_undefined": 0,
+    "median": -4.875,
+    "q25": -39.75,
+    "q75": 6.5
+   },
+   "n_later_higher": 7,
+   "n_later_lower": 13,
+   "n_same": 0,
+   "wilcoxon_p": 0.254809
+  },
+  "hum_pct_rem": {
+   "n_people": 20,
+   "difference": {
+    "n_defined": 20,
+    "n_undefined": 0,
+    "median": 1.391895,
+    "q25": -0.72719,
+    "q75": 3.979105
+   },
+   "n_later_higher": 13,
+   "n_later_lower": 7,
+   "n_same": 0,
+   "wilcoxon_p": 0.230513
+  }
+ },
+ "c_sex_bmi_age": {
+  "n_people": 100,
+  "dropout_share": {
+   "sex": {
+    "groups": {
+     "F": {
+      "n_people": 60,
+      "n_defined": 60,
+      "n_undefined": 0,
+      "median": 0.009133,
+      "q25": 0.001046,
+      "q75": 0.061174
+     },
+     "M": {
+      "n_people": 40,
+      "n_defined": 40,
+      "n_undefined": 0,
+      "median": 0.002578,
+      "q25": 0.000711,
+      "q75": 0.019638
+     }
+    },
+    "mannwhitney_p": 0.087531
+   },
+   "bmi": {
+    "n": 99,
+    "rho": -0.031697,
+    "p": 0.755454,
+    "n_people_without_value": 1
+   },
+   "age": {
+    "n": 99,
+    "rho": 0.057024,
+    "p": 0.575047,
+    "n_people_without_value": 1
+   }
+  },
+  "disagreement_rate": {
+   "sex": {
+    "groups": {
+     "F": {
+      "n_people": 60,
+      "n_defined": 60,
+      "n_undefined": 0,
+      "median": 0.113115,
+      "q25": 0.091269,
+      "q75": 0.143067
+     },
+     "M": {
+      "n_people": 40,
+      "n_defined": 40,
+      "n_undefined": 0,
+      "median": 0.129522,
+      "q25": 0.101518,
+      "q75": 0.159857
+     }
+    },
+    "mannwhitney_p": 0.283277
+   },
+   "bmi": {
+    "n": 99,
+    "rho": -0.009377,
+    "p": 0.926606,
+    "n_people_without_value": 1
+   },
+   "age": {
+    "n": 99,
+    "rho": -0.249137,
+    "p": 0.012892,
+    "n_people_without_value": 1
+   }
+  }
+ }
+}

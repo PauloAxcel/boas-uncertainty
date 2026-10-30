@@ -1,0 +1,712 @@
+[
+  {
+    "section": "2",
+    "check": "number of sub-* folders",
+    "passed": true,
+    "actual": 128,
+    "expected": 128
+  },
+  {
+    "section": "2",
+    "check": "every folder has the same 11 files",
+    "passed": true,
+    "actual": [
+      [
+        "eeg/{s}_task-Sleep_acq-headband_channels.tsv",
+        "eeg/{s}_task-Sleep_acq-headband_eeg.edf",
+        "eeg/{s}_task-Sleep_acq-headband_eeg.json",
+        "eeg/{s}_task-Sleep_acq-headband_events.json",
+        "eeg/{s}_task-Sleep_acq-headband_events.tsv",
+        "eeg/{s}_task-Sleep_acq-psg_channels.tsv",
+        "eeg/{s}_task-Sleep_acq-psg_eeg.edf",
+        "eeg/{s}_task-Sleep_acq-psg_eeg.json",
+        "eeg/{s}_task-Sleep_acq-psg_events.json",
+        "eeg/{s}_task-Sleep_acq-psg_events.tsv",
+        "{s}_scans.tsv"
+      ]
+    ],
+    "expected": [
+      [
+        "eeg/{s}_task-Sleep_acq-headband_channels.tsv",
+        "eeg/{s}_task-Sleep_acq-headband_eeg.edf",
+        "eeg/{s}_task-Sleep_acq-headband_eeg.json",
+        "eeg/{s}_task-Sleep_acq-headband_events.json",
+        "eeg/{s}_task-Sleep_acq-headband_events.tsv",
+        "eeg/{s}_task-Sleep_acq-psg_channels.tsv",
+        "eeg/{s}_task-Sleep_acq-psg_eeg.edf",
+        "eeg/{s}_task-Sleep_acq-psg_eeg.json",
+        "eeg/{s}_task-Sleep_acq-psg_events.json",
+        "eeg/{s}_task-Sleep_acq-psg_events.tsv",
+        "{s}_scans.tsv"
+      ]
+    ]
+  },
+  {
+    "section": "intro",
+    "check": "EDFs are annex symlinks without content (not downloaded)",
+    "passed": true,
+    "actual": 256,
+    "expected": 256
+  },
+  {
+    "section": "3",
+    "check": "psg events columns",
+    "passed": true,
+    "actual": [
+      [
+        "onset",
+        "duration",
+        "begsample",
+        "endsample",
+        "offset",
+        "stage_hum",
+        "stage_ai"
+      ]
+    ],
+    "expected": [
+      [
+        "onset",
+        "duration",
+        "begsample",
+        "endsample",
+        "offset",
+        "stage_hum",
+        "stage_ai"
+      ]
+    ]
+  },
+  {
+    "section": "3",
+    "check": "psg duration always 30",
+    "passed": true,
+    "actual": [
+      30
+    ],
+    "expected": [
+      30
+    ]
+  },
+  {
+    "section": "3",
+    "check": "psg offset always 0",
+    "passed": true,
+    "actual": [
+      0
+    ],
+    "expected": [
+      0
+    ]
+  },
+  {
+    "section": "3",
+    "check": "psg onset=30i, samples 1-based contiguous, sidecar keys match",
+    "passed": true,
+    "actual": [],
+    "expected": []
+  },
+  {
+    "section": "3",
+    "check": "headband events columns",
+    "passed": true,
+    "actual": [
+      [
+        "onset",
+        "duration",
+        "begsample",
+        "endsample",
+        "offset",
+        "stage_ai"
+      ]
+    ],
+    "expected": [
+      [
+        "onset",
+        "duration",
+        "begsample",
+        "endsample",
+        "offset",
+        "stage_ai"
+      ]
+    ]
+  },
+  {
+    "section": "3",
+    "check": "headband duration always 30",
+    "passed": true,
+    "actual": [
+      30
+    ],
+    "expected": [
+      30
+    ]
+  },
+  {
+    "section": "3",
+    "check": "headband offset always 0",
+    "passed": true,
+    "actual": [
+      0
+    ],
+    "expected": [
+      0
+    ]
+  },
+  {
+    "section": "3",
+    "check": "headband onset=30i, samples 1-based contiguous, sidecar keys match",
+    "passed": true,
+    "actual": [],
+    "expected": []
+  },
+  {
+    "section": "4",
+    "check": "psg_eeg.json has one key set",
+    "passed": true,
+    "actual": 1,
+    "expected": 1
+  },
+  {
+    "section": "4",
+    "check": "psg_eeg.json documented constant values",
+    "passed": true,
+    "actual": [],
+    "expected": []
+  },
+  {
+    "section": "4",
+    "check": "headband_eeg.json has one key set",
+    "passed": true,
+    "actual": 1,
+    "expected": 1
+  },
+  {
+    "section": "4",
+    "check": "headband_eeg.json documented constant values",
+    "passed": true,
+    "actual": [],
+    "expected": []
+  },
+  {
+    "section": "4",
+    "check": "psg EEGChannelCount distribution",
+    "passed": true,
+    "actual": {
+      "8": 64,
+      "9": 2,
+      "11": 38,
+      "12": 5,
+      "13": 19
+    },
+    "expected": {
+      "8": 64,
+      "9": 2,
+      "11": 38,
+      "12": 5,
+      "13": 19
+    }
+  },
+  {
+    "section": "4",
+    "check": "channels.tsv columns",
+    "passed": true,
+    "actual": [
+      [
+        "name",
+        "type",
+        "units",
+        "sampling_frequency"
+      ]
+    ],
+    "expected": [
+      [
+        "name",
+        "type",
+        "units",
+        "sampling_frequency"
+      ]
+    ]
+  },
+  {
+    "section": "4",
+    "check": "all channels sampled at 256 Hz",
+    "passed": true,
+    "actual": [
+      256
+    ],
+    "expected": [
+      256
+    ]
+  },
+  {
+    "section": "4",
+    "check": "channel names and counts (exact, with prefixes)",
+    "passed": true,
+    "actual": {
+      "HB_1": 128,
+      "HB_2": 128,
+      "HB_IMU_1": 94,
+      "HB_IMU_2": 94,
+      "HB_IMU_3": 94,
+      "HB_IMU_4": 94,
+      "HB_IMU_5": 94,
+      "HB_IMU_6": 94,
+      "HB_PULSE": 112,
+      "PSG_ABD": 62,
+      "PSG_BEAT": 104,
+      "PSG_C3": 128,
+      "PSG_C4": 128,
+      "PSG_CAN": 19,
+      "PSG_EMG": 128,
+      "PSG_EOG": 102,
+      "PSG_EOGL": 26,
+      "PSG_EOGR": 26,
+      "PSG_F3": 128,
+      "PSG_F4": 128,
+      "PSG_O1": 128,
+      "PSG_O2": 128,
+      "PSG_PULSE": 104,
+      "PSG_SPO2": 104,
+      "PSG_THER": 62,
+      "PSG_THOR": 62
+    },
+    "expected": {
+      "HB_1": 128,
+      "HB_2": 128,
+      "HB_IMU_1": 94,
+      "HB_IMU_2": 94,
+      "HB_IMU_3": 94,
+      "HB_IMU_4": 94,
+      "HB_IMU_5": 94,
+      "HB_IMU_6": 94,
+      "HB_PULSE": 112,
+      "PSG_ABD": 62,
+      "PSG_BEAT": 104,
+      "PSG_C3": 128,
+      "PSG_C4": 128,
+      "PSG_CAN": 19,
+      "PSG_EMG": 128,
+      "PSG_EOG": 102,
+      "PSG_EOGL": 26,
+      "PSG_EOGR": 26,
+      "PSG_F3": 128,
+      "PSG_F4": 128,
+      "PSG_O1": 128,
+      "PSG_O2": 128,
+      "PSG_PULSE": 104,
+      "PSG_SPO2": 104,
+      "PSG_THER": 62,
+      "PSG_THOR": 62
+    }
+  },
+  {
+    "section": "4",
+    "check": "EEGChannelCount equals number of type=EEG rows",
+    "passed": true,
+    "actual": [],
+    "expected": []
+  },
+  {
+    "section": "4",
+    "check": "top-level channels.tsv flags match per-recording channels",
+    "passed": true,
+    "actual": [],
+    "expected": []
+  },
+  {
+    "section": "4",
+    "check": "scans.tsv lists psg then headband EDF",
+    "passed": true,
+    "actual": [
+      [
+        "psg_eeg.edf",
+        "headband_eeg.edf"
+      ]
+    ],
+    "expected": [
+      [
+        "psg_eeg.edf",
+        "headband_eeg.edf"
+      ]
+    ]
+  },
+  {
+    "section": "5",
+    "check": "total epochs per label column",
+    "passed": true,
+    "actual": 120095,
+    "expected": 120095
+  },
+  {
+    "section": "5",
+    "check": "psg_hum counts",
+    "passed": true,
+    "actual": {
+      "0": 19137,
+      "1": 4462,
+      "2": 72181,
+      "3": 5225,
+      "4": 18754,
+      "8": 336
+    },
+    "expected": {
+      "0": 19137,
+      "1": 4462,
+      "2": 72181,
+      "3": 5225,
+      "4": 18754,
+      "8": 336
+    }
+  },
+  {
+    "section": "5",
+    "check": "psg_hum only uses its documented codes",
+    "passed": true,
+    "actual": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      8
+    ],
+    "expected": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      8
+    ]
+  },
+  {
+    "section": "5",
+    "check": "psg_hum nights containing each code",
+    "passed": true,
+    "actual": {
+      "0": 128,
+      "1": 128,
+      "2": 128,
+      "3": 91,
+      "4": 128,
+      "8": 37
+    },
+    "expected": {
+      "0": 128,
+      "1": 128,
+      "2": 128,
+      "3": 91,
+      "4": 128,
+      "8": 37
+    }
+  },
+  {
+    "section": "5",
+    "check": "psg_ai counts",
+    "passed": true,
+    "actual": {
+      "-2": 550,
+      "0": 19543,
+      "1": 3137,
+      "2": 71621,
+      "3": 5178,
+      "4": 20066
+    },
+    "expected": {
+      "-2": 550,
+      "0": 19543,
+      "1": 3137,
+      "2": 71621,
+      "3": 5178,
+      "4": 20066
+    }
+  },
+  {
+    "section": "5",
+    "check": "psg_ai only uses its documented codes",
+    "passed": true,
+    "actual": [
+      -2,
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "expected": [
+      -2,
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "section": "5",
+    "check": "psg_ai nights containing each code",
+    "passed": true,
+    "actual": {
+      "-2": 50,
+      "0": 128,
+      "1": 128,
+      "2": 128,
+      "3": 78,
+      "4": 128
+    },
+    "expected": {
+      "-2": 50,
+      "0": 128,
+      "1": 128,
+      "2": 128,
+      "3": 78,
+      "4": 128
+    }
+  },
+  {
+    "section": "5",
+    "check": "hb_ai counts",
+    "passed": true,
+    "actual": {
+      "-2": 4881,
+      "0": 18919,
+      "1": 2202,
+      "2": 70543,
+      "3": 4068,
+      "4": 19482
+    },
+    "expected": {
+      "-2": 4881,
+      "0": 18919,
+      "1": 2202,
+      "2": 70543,
+      "3": 4068,
+      "4": 19482
+    }
+  },
+  {
+    "section": "5",
+    "check": "hb_ai only uses its documented codes",
+    "passed": true,
+    "actual": [
+      -2,
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "expected": [
+      -2,
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "section": "5",
+    "check": "hb_ai nights containing each code",
+    "passed": true,
+    "actual": {
+      "-2": 100,
+      "0": 128,
+      "1": 128,
+      "2": 128,
+      "3": 72,
+      "4": 127
+    },
+    "expected": {
+      "-2": 100,
+      "0": 128,
+      "1": 128,
+      "2": 128,
+      "3": 72,
+      "4": 127
+    }
+  },
+  {
+    "section": "5",
+    "check": "psg_hum=8 runs",
+    "passed": true,
+    "actual": {
+      "n": 50,
+      "where": {
+        "middle": 48,
+        "end": 2
+      },
+      "len": [
+        1,
+        6,
+        46
+      ]
+    },
+    "expected": {
+      "n": 50,
+      "where": {
+        "middle": 48,
+        "end": 2
+      },
+      "len": [
+        1,
+        6,
+        46
+      ]
+    }
+  },
+  {
+    "section": "5",
+    "check": "psg_ai=-2 runs",
+    "passed": true,
+    "actual": {
+      "n": 115,
+      "where": {
+        "middle": 110,
+        "end": 5
+      },
+      "len": [
+        1,
+        2,
+        85
+      ]
+    },
+    "expected": {
+      "n": 115,
+      "where": {
+        "middle": 110,
+        "end": 5
+      },
+      "len": [
+        1,
+        2,
+        85
+      ]
+    }
+  },
+  {
+    "section": "5",
+    "check": "hb_ai=-2 runs",
+    "passed": true,
+    "actual": {
+      "n": 372,
+      "where": {
+        "middle": 302,
+        "end": 64,
+        "start": 6
+      },
+      "len": [
+        1,
+        1,
+        670
+      ]
+    },
+    "expected": {
+      "n": 372,
+      "where": {
+        "middle": 302,
+        "end": 64,
+        "start": 6
+      },
+      "len": [
+        1,
+        1,
+        670
+      ]
+    }
+  },
+  {
+    "section": "6",
+    "check": "epochs per night min/max",
+    "passed": true,
+    "actual": [
+      409,
+      1119
+    ],
+    "expected": [
+      409,
+      1119
+    ]
+  },
+  {
+    "section": "6",
+    "check": "RecordingDuration - 30*n_epochs range",
+    "passed": true,
+    "actual": [
+      0,
+      29
+    ],
+    "expected": [
+      0,
+      29
+    ]
+  },
+  {
+    "section": "7",
+    "check": "psg/headband: same onsets and RecordingDuration",
+    "passed": true,
+    "actual": [],
+    "expected": []
+  },
+  {
+    "section": "8",
+    "check": "participants rows",
+    "passed": true,
+    "actual": 128,
+    "expected": 128
+  },
+  {
+    "section": "8",
+    "check": "participant_id set equals sub-* folders",
+    "passed": true,
+    "actual": true,
+    "expected": true
+  },
+  {
+    "section": "8",
+    "check": "unique pid",
+    "passed": true,
+    "actual": 100,
+    "expected": 100
+  },
+  {
+    "section": "8",
+    "check": "sex counts",
+    "passed": true,
+    "actual": {
+      "F": 76,
+      "M": 52
+    },
+    "expected": {
+      "F": 76,
+      "M": 52
+    }
+  },
+  {
+    "section": "8",
+    "check": "n/a values",
+    "passed": true,
+    "actual": {
+      "sub-16": [
+        "age"
+      ],
+      "sub-29": [
+        "bmi"
+      ]
+    },
+    "expected": {
+      "sub-16": [
+        "age"
+      ],
+      "sub-29": [
+        "bmi"
+      ]
+    }
+  },
+  {
+    "section": "8",
+    "check": "pids with more than one night",
+    "passed": true,
+    "actual": 20,
+    "expected": 20
+  }
+]

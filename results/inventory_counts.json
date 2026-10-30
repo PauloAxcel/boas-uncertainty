@@ -1,0 +1,221 @@
+{
+  "n_nights": 128,
+  "n_epochs": 120095,
+  "example_night": "sub-50",
+  "psg_hum": {
+    "counts": {
+      "0": 19137,
+      "1": 4462,
+      "2": 72181,
+      "3": 5225,
+      "4": 18754,
+      "8": 336
+    },
+    "pct_of_sleep_epochs_pooled": {
+      "N1": 4.43,
+      "N2": 71.73,
+      "N3": 5.19,
+      "REM": 18.64
+    },
+    "pct_of_night_per_night_median_iqr": {
+      "W": [
+        8.74,
+        14.03,
+        20.4
+      ],
+      "N1": [
+        2.22,
+        3.09,
+        4.52
+      ],
+      "N2": [
+        55.21,
+        60.44,
+        65.27
+      ],
+      "N3": [
+        0.0,
+        1.65,
+        7.37
+      ],
+      "REM": [
+        11.29,
+        16.53,
+        19.57
+      ],
+      "8 disc.": [
+        0.0,
+        0.0,
+        0.11
+      ]
+    }
+  },
+  "psg_ai": {
+    "counts": {
+      "-2": 550,
+      "0": 19543,
+      "1": 3137,
+      "2": 71621,
+      "3": 5178,
+      "4": 20066
+    },
+    "pct_of_sleep_epochs_pooled": {
+      "N1": 3.14,
+      "N2": 71.62,
+      "N3": 5.18,
+      "REM": 20.07
+    },
+    "pct_of_night_per_night_median_iqr": {
+      "-2 art.": [
+        0.0,
+        0.0,
+        0.47
+      ],
+      "W": [
+        8.82,
+        13.59,
+        21.7
+      ],
+      "N1": [
+        1.52,
+        2.06,
+        3.27
+      ],
+      "N2": [
+        54.17,
+        59.68,
+        66.88
+      ],
+      "N3": [
+        0.0,
+        1.17,
+        7.64
+      ],
+      "REM": [
+        12.23,
+        17.95,
+        21.01
+      ]
+    }
+  },
+  "hb_ai": {
+    "counts": {
+      "-2": 4881,
+      "0": 18919,
+      "1": 2202,
+      "2": 70543,
+      "3": 4068,
+      "4": 19482
+    },
+    "pct_of_sleep_epochs_pooled": {
+      "N1": 2.29,
+      "N2": 73.26,
+      "N3": 4.22,
+      "REM": 20.23
+    },
+    "pct_of_night_per_night_median_iqr": {
+      "-2 art.": [
+        0.1,
+        0.23,
+        3.14
+      ],
+      "W": [
+        8.25,
+        13.23,
+        20.64
+      ],
+      "N1": [
+        0.98,
+        1.51,
+        2.59
+      ],
+      "N2": [
+        52.12,
+        59.38,
+        66.69
+      ],
+      "N3": [
+        0.0,
+        0.65,
+        5.77
+      ],
+      "REM": [
+        12.44,
+        16.84,
+        21.08
+      ]
+    }
+  },
+  "hb_ai_minus2_epochs_in_end_of_night_runs": 2928,
+  "nights_without_human_N3": 37,
+  "human_N3_pct_of_sleep_per_night_q25_median_q75": [
+    0.0,
+    2.03,
+    8.07
+  ],
+  "human_N3_pct_of_sleep_by_age_band": {
+    "18-29": {
+      "n_nights": 54,
+      "median": 7.73,
+      "mean": 8.1,
+      "nights_zero_N3": 5
+    },
+    "30-44": {
+      "n_nights": 27,
+      "median": 4.13,
+      "mean": 5.58,
+      "nights_zero_N3": 6
+    },
+    "45-59": {
+      "n_nights": 8,
+      "median": 0.16,
+      "mean": 2.3,
+      "nights_zero_N3": 4
+    },
+    "60-120": {
+      "n_nights": 38,
+      "median": 0.0,
+      "mean": 1.81,
+      "nights_zero_N3": 22
+    }
+  },
+  "human_N3_pct_of_sleep_vs_age_spearman": -0.514,
+  "nights_hb_minus2_at_or_before_human_sleep_onset": 27,
+  "nights_hb_minus2_on_human_sleep_onset_epoch": [
+    "sub-61"
+  ],
+  "nights_hb_minus2_at_or_before_first_human_REM": 40,
+  "nights_hb_minus2_on_first_human_REM_epoch": [
+    "sub-1",
+    "sub-57",
+    "sub-61"
+  ],
+  "nights_human_8_before_human_sleep_onset": 6,
+  "nights_human_8_before_first_human_REM": 15,
+  "hb_ai_minus2_end_of_night_runs_human_stages": {
+    "n_epochs": 2928,
+    "human_code_counts": {
+      "0": 525,
+      "1": 100,
+      "2": 1756,
+      "3": 127,
+      "4": 419,
+      "8": 1
+    },
+    "human_sleep_epochs": 2402,
+    "pct_human_asleep_of_all_epochs": 82.04,
+    "pct_human_asleep_of_epochs_with_stage_0_to_4": 82.06
+  },
+  "human_terminal_wake_min_per_night_q25_median_q75_max": [
+    0.5,
+    1.5,
+    5.5,
+    170.5
+  ],
+  "nights_human_terminal_wake_over_5_min": 34,
+  "night_hours_min_median_max": [
+    3.41,
+    7.79,
+    9.32
+  ]
+}

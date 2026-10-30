@@ -1,0 +1,146 @@
+{
+ "mapping": "wake = W; light = N1, N2, REM; deep = N3 (an assumption about the stimulation classifier)",
+ "min_epochs_per_night": 20,
+ "primary": {
+  "n_epochs": 114890,
+  "accuracy": 0.930046,
+  "counts": {
+   "wake": {
+    "wake": 16063,
+    "light": 2243,
+    "deep": 6
+   },
+   "light": {
+    "wake": 2531,
+    "light": 87979,
+    "deep": 1251
+   },
+   "deep": {
+    "wake": 15,
+    "light": 1991,
+    "deep": 2811
+   }
+  },
+  "row_normalised": {
+   "wake": {
+    "wake": 0.877184,
+    "light": 0.122488,
+    "deep": 0.000328
+   },
+   "light": {
+    "wake": 0.027583,
+    "light": 0.958784,
+    "deep": 0.013633
+   },
+   "deep": {
+    "wake": 0.003114,
+    "light": 0.413328,
+    "deep": 0.583558
+   }
+  },
+  "wake": {
+   "precision": 0.863184,
+   "recall": 0.877184,
+   "f1": 0.870128
+  },
+  "deep": {
+   "precision": 0.691003,
+   "recall": 0.583558,
+   "f1": 0.632752
+  },
+  "headband_deep_but_human_not_n3": {
+   "share": 0.308997,
+   "human_says_n2": 0.306539
+  },
+  "end_to_end_deep_recall": 0.53799,
+  "per_night": {
+   "deep_recall": {
+    "n_defined": 61,
+    "n_undefined": 67,
+    "median": 0.585714,
+    "q25": 0.227273,
+    "q75": 0.8
+   },
+   "deep_precision": {
+    "n_defined": 53,
+    "n_undefined": 75,
+    "median": 0.788321,
+    "q25": 0.522727,
+    "q75": 0.95935
+   },
+   "nights_with_enough_human_deep": 61,
+   "nights_where_headband_finds_none_of_them": 9
+  }
+ },
+ "without_rem": {
+  "n_epochs": 93062,
+  "accuracy": 0.92448,
+  "counts": {
+   "wake": {
+    "wake": 16063,
+    "light": 1579,
+    "deep": 6
+   },
+   "light": {
+    "wake": 2189,
+    "light": 67160,
+    "deep": 1248
+   },
+   "deep": {
+    "wake": 15,
+    "light": 1991,
+    "deep": 2811
+   }
+  },
+  "row_normalised": {
+   "wake": {
+    "wake": 0.910188,
+    "light": 0.089472,
+    "deep": 0.00034
+   },
+   "light": {
+    "wake": 0.031007,
+    "light": 0.951315,
+    "deep": 0.017678
+   },
+   "deep": {
+    "wake": 0.003114,
+    "light": 0.413328,
+    "deep": 0.583558
+   }
+  },
+  "wake": {
+   "precision": 0.879345,
+   "recall": 0.910188,
+   "f1": 0.894501
+  },
+  "deep": {
+   "precision": 0.691513,
+   "recall": 0.583558,
+   "f1": 0.632966
+  },
+  "headband_deep_but_human_not_n3": {
+   "share": 0.308487,
+   "human_says_n2": 0.306765
+  },
+  "end_to_end_deep_recall": 0.53799,
+  "per_night": {
+   "deep_recall": {
+    "n_defined": 61,
+    "n_undefined": 67,
+    "median": 0.585714,
+    "q25": 0.227273,
+    "q75": 0.8
+   },
+   "deep_precision": {
+    "n_defined": 53,
+    "n_undefined": 75,
+    "median": 0.795082,
+    "q25": 0.522727,
+    "q75": 0.95935
+   },
+   "nights_with_enough_human_deep": 61,
+   "nights_where_headband_finds_none_of_them": 9
+  }
+ }
+}

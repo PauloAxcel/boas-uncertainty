@@ -1,0 +1,28 @@
+[project]
+name = "boas-uncertainty"
+version = "0.1.0"
+description = "Where a wearable sleep headband is uncertain, and how to flag it (BOAS dataset)"
+readme = "README.md"
+authors = [
+    { name = "PauloAxcel", email = "30416684+PauloAxcel@users.noreply.github.com" }
+]
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "matplotlib>=3.11.2",
+    "numpy>=2.4.6",
+    "pandas>=3.1.0",
+    "scikit-learn>=1.9.1",
+    "scipy>=1.17.1",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.15,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "boas_unc"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]

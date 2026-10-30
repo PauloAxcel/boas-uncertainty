@@ -1,0 +1,790 @@
+{
+ "target": "headband and human both give a stage 0-4 and differ (human 8 excluded)",
+ "n_base_epochs": 114890,
+ "baseline_accuracy": 0.867386,
+ "validation": "5-fold, folds keep every night of one person together, scores are out of fold",
+ "flag_auroc_hand_made": {
+  "isolated": 0.540288,
+  "change_0": 0.646876,
+  "change_1": 0.690777,
+  "change_3": 0.715712,
+  "artefact_2": 0.504013,
+  "psg_ai_disagrees": 0.71555
+ },
+ "feature_sets": {
+  "causal": {
+   "n_features": 33,
+   "models": {
+    "logistic": {
+     "auroc": 0.717884,
+     "average_precision": 0.315856,
+     "curve": [
+      {
+       "coverage": 1.0,
+       "accuracy": 0.867386
+      },
+      {
+       "coverage": 0.98,
+       "accuracy": 0.874317
+      },
+      {
+       "coverage": 0.96,
+       "accuracy": 0.88052
+      },
+      {
+       "coverage": 0.94,
+       "accuracy": 0.88671
+      },
+      {
+       "coverage": 0.92,
+       "accuracy": 0.89261
+      },
+      {
+       "coverage": 0.9,
+       "accuracy": 0.897873
+      },
+      {
+       "coverage": 0.88,
+       "accuracy": 0.901685
+      },
+      {
+       "coverage": 0.86,
+       "accuracy": 0.905502
+      },
+      {
+       "coverage": 0.84,
+       "accuracy": 0.909054
+      },
+      {
+       "coverage": 0.82,
+       "accuracy": 0.912016
+      },
+      {
+       "coverage": 0.8,
+       "accuracy": 0.915756
+      },
+      {
+       "coverage": 0.78,
+       "accuracy": 0.919388
+      },
+      {
+       "coverage": 0.76,
+       "accuracy": 0.921905
+      },
+      {
+       "coverage": 0.74,
+       "accuracy": 0.924817
+      },
+      {
+       "coverage": 0.72,
+       "accuracy": 0.92702
+      },
+      {
+       "coverage": 0.7,
+       "accuracy": 0.929013
+      },
+      {
+       "coverage": 0.68,
+       "accuracy": 0.930689
+      },
+      {
+       "coverage": 0.66,
+       "accuracy": 0.932334
+      },
+      {
+       "coverage": 0.64,
+       "accuracy": 0.93453
+      },
+      {
+       "coverage": 0.62,
+       "accuracy": 0.93618
+      },
+      {
+       "coverage": 0.6,
+       "accuracy": 0.937447
+      },
+      {
+       "coverage": 0.58,
+       "accuracy": 0.938548
+      },
+      {
+       "coverage": 0.56,
+       "accuracy": 0.939011
+      },
+      {
+       "coverage": 0.54,
+       "accuracy": 0.939056
+      },
+      {
+       "coverage": 0.52,
+       "accuracy": 0.938537
+      },
+      {
+       "coverage": 0.5,
+       "accuracy": 0.938376
+      }
+     ],
+     "versus_hand_made_flags": {
+      "isolated": {
+       "coverage": 0.974262,
+       "heuristic_accuracy": 0.8769,
+       "learned_accuracy": 0.876042,
+       "difference": -0.000858,
+       "on_device": true
+      },
+      "change_0": {
+       "coverage": 0.887048,
+       "heuristic_accuracy": 0.905478,
+       "learned_accuracy": 0.900356,
+       "difference": -0.005122,
+       "on_device": true
+      },
+      "change_1": {
+       "coverage": 0.82216,
+       "heuristic_accuracy": 0.920769,
+       "learned_accuracy": 0.911622,
+       "difference": -0.009147,
+       "on_device": true
+      },
+      "change_3": {
+       "coverage": 0.723057,
+       "heuristic_accuracy": 0.936019,
+       "learned_accuracy": 0.926775,
+       "difference": -0.009244,
+       "on_device": true
+      },
+      "artefact_2": {
+       "coverage": 0.989634,
+       "heuristic_accuracy": 0.868319,
+       "learned_accuracy": 0.871117,
+       "difference": 0.002798,
+       "on_device": true
+      },
+      "psg_ai_disagrees": {
+       "coverage": 0.889486,
+       "heuristic_accuracy": 0.923136,
+       "learned_accuracy": 0.899975,
+       "difference": -0.023161,
+       "on_device": false
+      },
+      "combined_1": {
+       "coverage": 0.817617,
+       "heuristic_accuracy": 0.921468,
+       "learned_accuracy": 0.912388,
+       "difference": -0.00908,
+       "on_device": true
+      },
+      "change_2": {
+       "coverage": 0.76911,
+       "heuristic_accuracy": 0.929903,
+       "learned_accuracy": 0.920612,
+       "difference": -0.009291,
+       "on_device": true
+      },
+      "change_5": {
+       "coverage": 0.645104,
+       "heuristic_accuracy": 0.943993,
+       "learned_accuracy": 0.933456,
+       "difference": -0.010537,
+       "on_device": true
+      }
+     },
+     "per_night_at_change_1_coverage": {
+      "coverage": {
+       "n_defined": 128,
+       "n_undefined": 0,
+       "median": 0.82808,
+       "q25": 0.792895,
+       "q75": 0.863728
+      },
+      "accuracy_kept": {
+       "n_defined": 128,
+       "n_undefined": 0,
+       "median": 0.928336,
+       "q25": 0.884559,
+       "q75": 0.950574
+      }
+     }
+    },
+    "gradient_boosting": {
+     "auroc": 0.759554,
+     "average_precision": 0.390714,
+     "curve": [
+      {
+       "coverage": 1.0,
+       "accuracy": 0.867386
+      },
+      {
+       "coverage": 0.98,
+       "accuracy": 0.877595
+      },
+      {
+       "coverage": 0.96,
+       "accuracy": 0.884827
+      },
+      {
+       "coverage": 0.94,
+       "accuracy": 0.89158
+      },
+      {
+       "coverage": 0.92,
+       "accuracy": 0.89788
+      },
+      {
+       "coverage": 0.9,
+       "accuracy": 0.903396
+      },
+      {
+       "coverage": 0.88,
+       "accuracy": 0.908461
+      },
+      {
+       "coverage": 0.86,
+       "accuracy": 0.912708
+      },
+      {
+       "coverage": 0.84,
+       "accuracy": 0.91667
+      },
+      {
+       "coverage": 0.82,
+       "accuracy": 0.920422
+      },
+      {
+       "coverage": 0.8,
+       "accuracy": 0.92409
+      },
+      {
+       "coverage": 0.78,
+       "accuracy": 0.927334
+      },
+      {
+       "coverage": 0.76,
+       "accuracy": 0.92983
+      },
+      {
+       "coverage": 0.74,
+       "accuracy": 0.931815
+      },
+      {
+       "coverage": 0.72,
+       "accuracy": 0.933076
+      },
+      {
+       "coverage": 0.7,
+       "accuracy": 0.934708
+      },
+      {
+       "coverage": 0.68,
+       "accuracy": 0.935719
+      },
+      {
+       "coverage": 0.66,
+       "accuracy": 0.936
+      },
+      {
+       "coverage": 0.64,
+       "accuracy": 0.936992
+      },
+      {
+       "coverage": 0.62,
+       "accuracy": 0.937317
+      },
+      {
+       "coverage": 0.6,
+       "accuracy": 0.938071
+      },
+      {
+       "coverage": 0.58,
+       "accuracy": 0.939568
+      },
+      {
+       "coverage": 0.56,
+       "accuracy": 0.941264
+      },
+      {
+       "coverage": 0.54,
+       "accuracy": 0.941764
+      },
+      {
+       "coverage": 0.52,
+       "accuracy": 0.942939
+      },
+      {
+       "coverage": 0.5,
+       "accuracy": 0.943912
+      }
+     ],
+     "versus_hand_made_flags": {
+      "isolated": {
+       "coverage": 0.974262,
+       "heuristic_accuracy": 0.8769,
+       "learned_accuracy": 0.879624,
+       "difference": 0.002724,
+       "on_device": true
+      },
+      "change_0": {
+       "coverage": 0.887048,
+       "heuristic_accuracy": 0.905478,
+       "learned_accuracy": 0.906872,
+       "difference": 0.001394,
+       "on_device": true
+      },
+      "change_1": {
+       "coverage": 0.82216,
+       "heuristic_accuracy": 0.920769,
+       "learned_accuracy": 0.919996,
+       "difference": -0.000773,
+       "on_device": true
+      },
+      "change_3": {
+       "coverage": 0.723057,
+       "heuristic_accuracy": 0.936019,
+       "learned_accuracy": 0.933011,
+       "difference": -0.003008,
+       "on_device": true
+      },
+      "artefact_2": {
+       "coverage": 0.989634,
+       "heuristic_accuracy": 0.868319,
+       "learned_accuracy": 0.87321,
+       "difference": 0.004891,
+       "on_device": true
+      },
+      "psg_ai_disagrees": {
+       "coverage": 0.889486,
+       "heuristic_accuracy": 0.923136,
+       "learned_accuracy": 0.90613,
+       "difference": -0.017006,
+       "on_device": false
+      },
+      "combined_1": {
+       "coverage": 0.817617,
+       "heuristic_accuracy": 0.921468,
+       "learned_accuracy": 0.92099,
+       "difference": -0.000478,
+       "on_device": true
+      },
+      "change_2": {
+       "coverage": 0.76911,
+       "heuristic_accuracy": 0.929903,
+       "learned_accuracy": 0.928851,
+       "difference": -0.001052,
+       "on_device": true
+      },
+      "change_5": {
+       "coverage": 0.645104,
+       "heuristic_accuracy": 0.943993,
+       "learned_accuracy": 0.936424,
+       "difference": -0.007569,
+       "on_device": true
+      }
+     },
+     "per_night_at_change_1_coverage": {
+      "coverage": {
+       "n_defined": 128,
+       "n_undefined": 0,
+       "median": 0.829086,
+       "q25": 0.791458,
+       "q75": 0.864651
+      },
+      "accuracy_kept": {
+       "n_defined": 128,
+       "n_undefined": 0,
+       "median": 0.934621,
+       "q25": 0.900082,
+       "q75": 0.958051
+      }
+     }
+    }
+   }
+  },
+  "non_causal": {
+   "n_features": 56,
+   "models": {
+    "logistic": {
+     "auroc": 0.773076,
+     "average_precision": 0.365933,
+     "curve": [
+      {
+       "coverage": 1.0,
+       "accuracy": 0.867386
+      },
+      {
+       "coverage": 0.98,
+       "accuracy": 0.87517
+      },
+      {
+       "coverage": 0.96,
+       "accuracy": 0.882851
+      },
+      {
+       "coverage": 0.94,
+       "accuracy": 0.889775
+      },
+      {
+       "coverage": 0.92,
+       "accuracy": 0.896792
+      },
+      {
+       "coverage": 0.9,
+       "accuracy": 0.90269
+      },
+      {
+       "coverage": 0.88,
+       "accuracy": 0.908431
+      },
+      {
+       "coverage": 0.86,
+       "accuracy": 0.913578
+      },
+      {
+       "coverage": 0.84,
+       "accuracy": 0.918888
+      },
+      {
+       "coverage": 0.82,
+       "accuracy": 0.92315
+      },
+      {
+       "coverage": 0.8,
+       "accuracy": 0.927148
+      },
+      {
+       "coverage": 0.78,
+       "accuracy": 0.930123
+      },
+      {
+       "coverage": 0.76,
+       "accuracy": 0.932877
+      },
+      {
+       "coverage": 0.74,
+       "accuracy": 0.935367
+      },
+      {
+       "coverage": 0.72,
+       "accuracy": 0.93744
+      },
+      {
+       "coverage": 0.7,
+       "accuracy": 0.938973
+      },
+      {
+       "coverage": 0.68,
+       "accuracy": 0.940417
+      },
+      {
+       "coverage": 0.66,
+       "accuracy": 0.941895
+      },
+      {
+       "coverage": 0.64,
+       "accuracy": 0.943411
+      },
+      {
+       "coverage": 0.62,
+       "accuracy": 0.94487
+      },
+      {
+       "coverage": 0.6,
+       "accuracy": 0.946151
+      },
+      {
+       "coverage": 0.58,
+       "accuracy": 0.947792
+      },
+      {
+       "coverage": 0.56,
+       "accuracy": 0.949175
+      },
+      {
+       "coverage": 0.54,
+       "accuracy": 0.950404
+      },
+      {
+       "coverage": 0.52,
+       "accuracy": 0.951124
+      },
+      {
+       "coverage": 0.5,
+       "accuracy": 0.951902
+      }
+     ],
+     "versus_hand_made_flags": {
+      "isolated": {
+       "coverage": 0.974262,
+       "heuristic_accuracy": 0.8769,
+       "learned_accuracy": 0.877409,
+       "difference": 0.000509,
+       "on_device": true
+      },
+      "change_0": {
+       "coverage": 0.887048,
+       "heuristic_accuracy": 0.905478,
+       "learned_accuracy": 0.906479,
+       "difference": 0.001001,
+       "on_device": true
+      },
+      "change_1": {
+       "coverage": 0.82216,
+       "heuristic_accuracy": 0.920769,
+       "learned_accuracy": 0.922749,
+       "difference": 0.00198,
+       "on_device": true
+      },
+      "change_3": {
+       "coverage": 0.723057,
+       "heuristic_accuracy": 0.936019,
+       "learned_accuracy": 0.9372,
+       "difference": 0.001181,
+       "on_device": true
+      },
+      "artefact_2": {
+       "coverage": 0.989634,
+       "heuristic_accuracy": 0.868319,
+       "learned_accuracy": 0.87131,
+       "difference": 0.002991,
+       "on_device": true
+      },
+      "psg_ai_disagrees": {
+       "coverage": 0.889486,
+       "heuristic_accuracy": 0.923136,
+       "learned_accuracy": 0.905865,
+       "difference": -0.017271,
+       "on_device": false
+      },
+      "combined_1": {
+       "coverage": 0.817617,
+       "heuristic_accuracy": 0.921468,
+       "learned_accuracy": 0.923715,
+       "difference": 0.002247,
+       "on_device": true
+      },
+      "change_2": {
+       "coverage": 0.76911,
+       "heuristic_accuracy": 0.929903,
+       "learned_accuracy": 0.931714,
+       "difference": 0.001811,
+       "on_device": true
+      },
+      "change_5": {
+       "coverage": 0.645104,
+       "heuristic_accuracy": 0.943993,
+       "learned_accuracy": 0.942954,
+       "difference": -0.001039,
+       "on_device": true
+      }
+     },
+     "per_night_at_change_1_coverage": {
+      "coverage": {
+       "n_defined": 128,
+       "n_undefined": 0,
+       "median": 0.829344,
+       "q25": 0.78016,
+       "q75": 0.865444
+      },
+      "accuracy_kept": {
+       "n_defined": 128,
+       "n_undefined": 0,
+       "median": 0.939619,
+       "q25": 0.895423,
+       "q75": 0.961101
+      }
+     }
+    },
+    "gradient_boosting": {
+     "auroc": 0.797877,
+     "average_precision": 0.431278,
+     "curve": [
+      {
+       "coverage": 1.0,
+       "accuracy": 0.867386
+      },
+      {
+       "coverage": 0.98,
+       "accuracy": 0.878651
+      },
+      {
+       "coverage": 0.96,
+       "accuracy": 0.886241
+      },
+      {
+       "coverage": 0.94,
+       "accuracy": 0.892877
+      },
+      {
+       "coverage": 0.92,
+       "accuracy": 0.899696
+      },
+      {
+       "coverage": 0.9,
+       "accuracy": 0.905823
+      },
+      {
+       "coverage": 0.88,
+       "accuracy": 0.91125
+      },
+      {
+       "coverage": 0.86,
+       "accuracy": 0.916705
+      },
+      {
+       "coverage": 0.84,
+       "accuracy": 0.921219
+      },
+      {
+       "coverage": 0.82,
+       "accuracy": 0.925486
+      },
+      {
+       "coverage": 0.8,
+       "accuracy": 0.929585
+      },
+      {
+       "coverage": 0.78,
+       "accuracy": 0.933962
+      },
+      {
+       "coverage": 0.76,
+       "accuracy": 0.936816
+      },
+      {
+       "coverage": 0.74,
+       "accuracy": 0.939684
+      },
+      {
+       "coverage": 0.72,
+       "accuracy": 0.94236
+      },
+      {
+       "coverage": 0.7,
+       "accuracy": 0.944581
+      },
+      {
+       "coverage": 0.68,
+       "accuracy": 0.946586
+      },
+      {
+       "coverage": 0.66,
+       "accuracy": 0.948528
+      },
+      {
+       "coverage": 0.64,
+       "accuracy": 0.950632
+      },
+      {
+       "coverage": 0.62,
+       "accuracy": 0.952002
+      },
+      {
+       "coverage": 0.6,
+       "accuracy": 0.952723
+      },
+      {
+       "coverage": 0.58,
+       "accuracy": 0.953314
+      },
+      {
+       "coverage": 0.56,
+       "accuracy": 0.954429
+      },
+      {
+       "coverage": 0.54,
+       "accuracy": 0.955674
+      },
+      {
+       "coverage": 0.52,
+       "accuracy": 0.956497
+      },
+      {
+       "coverage": 0.5,
+       "accuracy": 0.957385
+      }
+     ],
+     "versus_hand_made_flags": {
+      "isolated": {
+       "coverage": 0.974262,
+       "heuristic_accuracy": 0.8769,
+       "learned_accuracy": 0.881081,
+       "difference": 0.004181,
+       "on_device": true
+      },
+      "change_0": {
+       "coverage": 0.887048,
+       "heuristic_accuracy": 0.905478,
+       "learned_accuracy": 0.909305,
+       "difference": 0.003827,
+       "on_device": true
+      },
+      "change_1": {
+       "coverage": 0.82216,
+       "heuristic_accuracy": 0.920769,
+       "learned_accuracy": 0.925046,
+       "difference": 0.004277,
+       "on_device": true
+      },
+      "change_3": {
+       "coverage": 0.723057,
+       "heuristic_accuracy": 0.936019,
+       "learned_accuracy": 0.941882,
+       "difference": 0.005863,
+       "on_device": true
+      },
+      "artefact_2": {
+       "coverage": 0.989634,
+       "heuristic_accuracy": 0.868319,
+       "learned_accuracy": 0.874063,
+       "difference": 0.005744,
+       "on_device": true
+      },
+      "psg_ai_disagrees": {
+       "coverage": 0.889486,
+       "heuristic_accuracy": 0.923136,
+       "learned_accuracy": 0.908664,
+       "difference": -0.014472,
+       "on_device": false
+      },
+      "combined_1": {
+       "coverage": 0.817617,
+       "heuristic_accuracy": 0.921468,
+       "learned_accuracy": 0.925886,
+       "difference": 0.004418,
+       "on_device": true
+      },
+      "change_2": {
+       "coverage": 0.76911,
+       "heuristic_accuracy": 0.929903,
+       "learned_accuracy": 0.935596,
+       "difference": 0.005693,
+       "on_device": true
+      },
+      "change_5": {
+       "coverage": 0.645104,
+       "heuristic_accuracy": 0.943993,
+       "learned_accuracy": 0.950119,
+       "difference": 0.006126,
+       "on_device": true
+      }
+     },
+     "per_night_at_change_1_coverage": {
+      "coverage": {
+       "n_defined": 128,
+       "n_undefined": 0,
+       "median": 0.829869,
+       "q25": 0.787353,
+       "q75": 0.861095
+      },
+      "accuracy_kept": {
+       "n_defined": 128,
+       "n_undefined": 0,
+       "median": 0.93953,
+       "q25": 0.902614,
+       "q75": 0.962474
+      }
+     }
+    }
+   }
+  }
+ }
+}
